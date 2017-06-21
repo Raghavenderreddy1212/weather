@@ -9,7 +9,7 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
     <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8083" doc:name="HTTP Listener Configuration"/>
     <flow name="TestPayload">
-        <set-payload value="#[&quot;Hello&quot;]" doc:name="Set Payload"/>
+        <set-payload value="#[&quot;Hello00&quot;]" doc:name="Set Payload"/>
     </flow>
     <flow name="welcome">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/greet" doc:name="HTTP"/>
